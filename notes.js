@@ -121,3 +121,28 @@ const fullPrice = basePrice - discount + shippingCost
 
 //Finally, notifying the customer
 console.log("Totoal cost: " + fullPrice + ". It will arrive in " + shippingTime)
+
+//Use .innerHTML to render a Buy! button inside the div container
+
+const container = document.getElementById("container")
+container.innerHTML = "<button onclick= 'buy()'>Buy!</button>"
+
+//When clicked, render a paragraph under the button (in the container)
+//that says "Thank you for buying!"
+
+function buy(){
+    container.innerHTML += "<p>Thank you for buying!</p>"
+}
+
+// // create element 
+// document.createElement("li")
+// // store in variable
+// const li = document.createElement("li")
+// //set text cntent
+// li.textContent = myLeads[i]
+// // append to ul
+// ulEl.append(li)
+const li = document.createElement("li")
+li.textContent = myLeads[i]
+
+set text content*
