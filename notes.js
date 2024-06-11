@@ -100,82 +100,110 @@
 // // let box = document.getElementById("box")
 // // box.addEventListener("click", function() {
 // //     console.log("I want to open the box!")
-// // })
+// // // })
 
-// //If possible, use const.  IF not, use let.
+// // //If possible, use const.  IF not, use let.
 
-// //Which variables below should be changed fromlet to const?
+// // //Which variables below should be changed fromlet to const?
 
-// //The customer wants to order some stuff.  Here are the details:
-// const basePrice = 520
-// const discount = 120
-// let shippingCost = 12
-// let shippingTime = "5-12 days"
+// // //The customer wants to order some stuff.  Here are the details:
+// // const basePrice = 520
+// // const discount = 120
+// // let shippingCost = 12
+// // let shippingTime = "5-12 days"
 
-// //Whoops! Turn outthe shipping will be a bit more complex
-// shippingCost = 15
-// shippingTime = "7-14 days"
+// // //Whoops! Turn outthe shipping will be a bit more complex
+// // shippingCost = 15
+// // shippingTime = "7-14 days"
 
-// //Calculating the full price
-// const fullPrice = basePrice - discount + shippingCost
+// // //Calculating the full price
+// // const fullPrice = basePrice - discount + shippingCost
 
-// //Finally, notifying the customer
-// console.log("Totoal cost: " + fullPrice + ". It will arrive in " + shippingTime)
+// // //Finally, notifying the customer
+// // console.log("Totoal cost: " + fullPrice + ". It will arrive in " + shippingTime)
 
-// //Use .innerHTML to render a Buy! button inside the div container
+// // //Use .innerHTML to render a Buy! button inside the div container
 
-// const container = document.getElementById("container")
-// container.innerHTML = "<button onclick= 'buy()'>Buy!</button>"
+// // const container = document.getElementById("container")
+// // container.innerHTML = "<button onclick= 'buy()'>Buy!</button>"
 
-// //When clicked, render a paragraph under the button (in the container)
-// //that says "Thank you for buying!"
+// // //When clicked, render a paragraph under the button (in the container)
+// // //that says "Thank you for buying!"
 
-// function buy(){
-//     container.innerHTML += "<p>Thank you for buying!</p>"
-// }
+// // function buy(){
+// //     container.innerHTML += "<p>Thank you for buying!</p>"
+// // }
 
-// // // create element 
-// // document.createElement("li")
-// // // store in variable
+// // // // create element 
+// // // document.createElement("li")
+// // // // store in variable
+// // // const li = document.createElement("li")
+// // // //set text cntent
+// // // li.textContent = myLeads[i]
+// // // // append to ul
+// // // ulEl.append(li)
 // // const li = document.createElement("li")
-// // //set text cntent
 // // li.textContent = myLeads[i]
-// // // append to ul
-// // ulEl.append(li)
-// const li = document.createElement("li")
-// li.textContent = myLeads[i]
 
-//05/30
-//template strings/literals
+// //05/30
+// //template strings/literals
 
-const recipient ="James"
+// const recipient ="James"
 
-//Refactor the email string to use template strings
-const email = 'Hey ${recipient}! How is it going? Cheers Per'
+// //Refactor the email string to use template strings
+// const email = 'Hey ${recipient}! How is it going? Cheers Per'
 
-console.log(email)
+// console.log(email)
 
-//Create a new variable, sender, and set its value to your name
-const sender = "Angela"
-const email = `Hey ${recipient}! How is it going? Cheers ${sender}`
+// //Create a new variable, sender, and set its value to your name
+// const sender = "Angela"
+// const email = `Hey ${recipient}! How is it going? Cheers ${sender}`
 
 //06/05
 
 // 1. Save a key/value pair in localStorage
 // 2. Refresh the page. Get the value and log it to the console
 // 3. Clear localStorage
-localStorage.setItem("myName", "Angela Thomas"
-localStorage.getItem("myName")
-console.log(name)
-localStorage.clear()
+// localStorage.setItem("myName", "Angela Thomas"
+// localStorage.getItem("myName")
+// console.log(name)
+// localStorage.clear()
 
-let myLeads = `["www.awesomelead.com"]`
+// let myLeads = `["www.awesomelead.com"]`
 
-//1. Turn the myLeads string into an array
-myLeads = JSON.parse(myLeads)
-//2. Push a new value to the array
-myLeads.push("www.lead2.com")
-//3. Turn the array into a string again
-myLeads = JSON.stringify(myLeads)
-//4. Console.log the string using typeof to verify that it's a string
-console.log(typeof myLeads)
+// //1. Turn the myLeads string into an array
+// myLeads = JSON.parse(myLeads)
+// //2. Push a new value to the array
+// myLeads.push("www.lead2.com")
+// //3. Turn the array into a string again
+// myLeads = JSON.stringify(myLeads)
+// //4. Console.log the string using typeof to verify that it's a string
+// console.log(typeof myLeads)
+
+//06/10
+
+//truthy
+//falsy
+
+//false
+//0
+//""
+//null ->how you as a developer signalize emptiness
+//undefined -> how JavScript signifies emptiness
+//NaN
+
+console.log(Boolean(""))
+
+//Check if leadsFromLocalStorage is truthy
+//If so, set myLeads to its value and call renderLeads()
+
+if (leadsFromLocalStorage){
+    myLeads = leadsFromLocalStorage
+    renderLeads()
+}
+
+// In JavaScript, data types refer to the different categories of values that can be assigned to variables. These include primitive data types such as numbers, strings, booleans, null, and undefined, as well as complex data types such as objects and arrays.
+
+On the other hand, data structures in JavaScript are used to organize and store data in a specific way. They are built using the available data types in JavaScript. Data structures help in efficient data manipulation and retrieval.
+
+Some common

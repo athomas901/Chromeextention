@@ -18,6 +18,13 @@ button {
     border: none;
     font-weight: bold;
 }
+
+#delete-btn {
+    background: white;
+    color: #5F9341;
+ }
+
+
 ul {
     margin-top: 20px;
     list-style: none;
