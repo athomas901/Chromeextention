@@ -206,4 +206,29 @@ if (leadsFromLocalStorage){
 
 On the other hand, data structures in JavaScript are used to organize and store data in a specific way. They are built using the available data types in JavaScript. Data structures help in efficient data manipulation and retrieval.
 
-Some common
+//06/11
+
+const welcomeEl = document.getElementById("welcome-el");
+function greetUser(greeting, name) {
+   welcomeEl.textContent = `${greeting},${name}!`
+}
+greetUser("Hello", "Angela Thomas")
+
+//Create a function, add(), that adds two numbers together and returns the sum
+
+function add(num1, num2){
+    return num1 + num2
+
+}
+
+console.log( add(3, 4)    ) //should log 7
+console.log( add(9, 102)    ) //should log 7
+
+//Create a function, getFirst(arr), that returns the first item in the array
+
+function getFirst(arr) {
+    return arr[0];
+}
+
+//Call it with an array as an argument to verify that ut works
+console.log(arr)
